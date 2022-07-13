@@ -1,8 +1,9 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": "https://github.com/valerius21/vseq.git",
   "files": [
     "dist",
     "src"
