@@ -14,13 +14,13 @@
   "scripts": {
     "watch": "tsup --watch",
     "build": "tsup",
-    "lint": "npx eslint .",
+    "lint": "bunx eslint .",
     "size": "size-limit",
     "test": "bun test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx eslint ."
+      "pre-commit": "bunx eslint ."
     }
   },
   "prettier": {
