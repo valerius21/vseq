@@ -1,16 +1,22 @@
+![vseq Logo](./logo.png)
+
 # vseq
 
-`vseq` is a versatile and lightweight utility for generating sequences of numbers, similar to the [GNU coreutils - seq](https://www.gnu.org/software/coreutils/manual/html_node/seq-invocation.html).
+`vseq` is a versatile and lightweight utility designed for generating sequences of numbers, offering functionality akin to [GNU coreutils - seq](https://www.gnu.org/software/coreutils/manual/html_node/seq-invocation.html). Building upon [lodash.range](https://lodash.com/docs/4.17.15#range), `vseq` extends its capabilities, providing greater flexibility in sequence generation.
 
-The package is based on [lodash.range](https://lodash.com/docs/4.17.15#range), but extends its functionality to provide more options for sequence generation.
+Easily specify start, end, and step values to tailor sequences to your needs.
 
-With `vseq`, you can specify the start, end, and step values for your sequence.
+## Features
+
+- **Customizable Sequences:** Define start, end, and step values for tailored number sequences.
+- **Inclusive Range:** Unlike traditional range functions, `vseq` includes the end number in the sequence.
+- **Lightweight and Fast:** Optimized for performance and ease of use.
 
 ## Installation
 
-You can install `vseq` using various package managers:
+Quickly integrate `vseq` into your project using your preferred package manager:
 
-**npm:**
+### npm
 
 ```bash
 npm install vseq
@@ -39,3 +45,21 @@ bun add vseq
 You can find the documentation for `vseq` on
 
 https://tsdocs.dev/docs/vseq/lastest/index.html
+
+## Example Usage
+
+```ts
+import { seq } from 'vseq';
+
+// Generate a sequence from 1 to 5
+const sequence = seq(1, 5);
+console.log(sequence); // Output: [1, 2, 3, 4, 5]
+```
+
+## Contributing
+
+Contributions to vseq are always welcome, whether it's bug reports, feature requests, or pull requests. 
+
+## License
+
+vseq is open-source software licensed under the MIT License.
