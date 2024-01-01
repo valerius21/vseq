@@ -3,7 +3,10 @@
   "license": "MIT",
   "main": "dist/vseq.js",
   "typings": "dist/vseq.d.ts",
-  "repository": "https://github.com/valerius21/vseq.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valerius21/vseq.git"
+  },
   "files": [
     "dist",
     "src"
@@ -52,6 +55,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "eslint": "^8.56.0"
