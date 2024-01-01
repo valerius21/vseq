@@ -46,7 +46,7 @@ bun add vseq
 
 You can find the documentation for `vseq` on
 
-https://tsdocs.dev/docs/vseq/lastest/index.html
+https://tsdocs.dev/docs/vseq/
 
 ## Example Usage
 
