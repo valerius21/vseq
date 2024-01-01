@@ -15,8 +15,7 @@
     "watch": "tsup --watch",
     "build": "tsup",
     "lint": "npx eslint .",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "size": "size-limit"
   },
   "husky": {
     "hooks": {
