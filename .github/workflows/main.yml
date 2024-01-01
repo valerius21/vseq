@@ -19,14 +19,17 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Install bun
+        run: npm install -g bun
+
       - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
+        run: bun install
 
       - name: Lint
-        run: npm run lint
+        run: bun run lint
 
       - name: Test
-        run: npm run test --ci --coverage --maxWorkers=2
+        run: bun run test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: npm run build
+        run: bun run build

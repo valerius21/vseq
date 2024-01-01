@@ -15,7 +15,8 @@
     "watch": "tsup --watch",
     "build": "tsup",
     "lint": "npx eslint .",
-    "size": "size-limit"
+    "size": "size-limit",
+    "test": "bun test/*.ts"
   },
   "husky": {
     "hooks": {
