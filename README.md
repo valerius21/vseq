@@ -1,4 +1,6 @@
-![vseq Logo](./logo.png)
+<p align="center">
+  <img src="./vseq_logo.png" />
+</p>
 
 # vseq
 
