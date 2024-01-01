@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -37,24 +37,19 @@
   "size-limit": [
     {
       "path": "dist/vseq.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "1 KB"
     },
     {
       "path": "dist/vseq.esm.js",
-      "limit": "10 KB"
+      "limit": "1 KB"
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^7.0.8",
-    "@types/lodash": "^4.14.182",
-    "@types/lodash.range": "^3.2.7",
+    "@size-limit/preset-small-lib": "^11.0.1",
     "husky": "^8.0.1",
-    "size-limit": "^7.0.8",
+    "size-limit": "^11.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "lodash.range": "^3.2.0"
+    "typescript": "^5.3.3"
   }
 }
