@@ -16,7 +16,7 @@
     "build": "tsup",
     "lint": "npx eslint .",
     "size": "size-limit",
-    "test": "bun test/*.ts"
+    "test": "bun test"
   },
   "husky": {
     "hooks": {
