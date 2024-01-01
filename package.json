@@ -1,28 +1,26 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/vseq.js",
+  "typings": "dist/vseq.d.ts",
   "repository": "https://github.com/valerius21/vseq.git",
   "files": [
     "dist",
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "watch": "tsup --watch",
+    "build": "tsup",
+    "lint": "npx eslint .",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "npx eslint ."
     }
   },
   "prettier": {
@@ -33,23 +31,29 @@
   },
   "name": "vseq",
   "author": "Valerius Mattfeld",
-  "module": "dist/vseq.esm.js",
+  "module": "dist/vseq.js",
   "size-limit": [
     {
-      "path": "dist/vseq.cjs.production.min.js",
-      "limit": "1 KB"
+      "path": "dist/vseq.cjs",
+      "limit": "500 B"
     },
     {
-      "path": "dist/vseq.esm.js",
-      "limit": "1 KB"
+      "path": "dist/vseq.js",
+      "limit": "500 B"
     }
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.1",
+    "@types/bun": "latest",
     "husky": "^8.0.1",
     "size-limit": "^11.0.1",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.4.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0"
   }
 }

@@ -1,4 +1,4 @@
-import { seq } from '../src';
+import { seq } from "./vseq";
 
 describe('seq function', () => {
   it('should generate a sequence of numbers from start to end', () => {
