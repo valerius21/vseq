@@ -8,6 +8,10 @@
 
 Easily specify start, end, and step values to tailor sequences to your needs.
 
+## Documentation
+
+[You can find the documentation on tsdoc.dev](https://tsdocs.dev/docs/vseq/).
+
 ## Features
 
 - **Customizable Sequences:** Define start, end, and step values for tailored number sequences.
